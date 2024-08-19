@@ -1,1 +1,28 @@
 /*  your css code here. If applicable */
+.container{
+	display:grid;
+	height:100vh;
+	gap:5px;
+	/* grid-template-columns:100px 100px 100px 100px; */
+	/* grid-template-rows:; */
+}
+.container div{
+	border:1px solid white;
+	background-color:green;
+	color:white;
+	font-size:20px;
+	text-align:center;
+	padding:10px;
+}
+.item1{
+	grid-column:span 4;
+}
+.item2{
+	grid-row:span 4;
+}
+.item4,.item5{
+	grid-column:span 2
+}
+.item10{
+	grid-column:span 3;
+}
