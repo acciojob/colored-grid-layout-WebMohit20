@@ -1,28 +1,28 @@
 /*  your css code here. If applicable */
-.container{
+#grid{
 	display:grid;
 	height:100vh;
 	gap:5px;
 	/* grid-template-columns:100px 100px 100px 100px; */
 	/* grid-template-rows:; */
 }
-.container div{
+#grid div{
 	border:1px solid white;
 	background-color:green;
 	color:white;
-	font-size:20px;
+	font-size:4vw;
 	text-align:center;
 	padding:10px;
 }
-.item1{
+#grid > div:nth-child(1){
 	grid-column:span 4;
 }
-.item2{
+#grid > div:nth-child(2){
 	grid-row:span 4;
 }
-.item4,.item5{
+#grid > div:nth-child(4), #grid > div:nth-child(5){
 	grid-column:span 2
 }
-.item10{
+#grid > div:nth-child(10){
 	grid-column:span 3;
 }
